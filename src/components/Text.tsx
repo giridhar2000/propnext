@@ -1,4 +1,7 @@
-import { afacad } from "@/app/layout";
+import { NextFont } from "next/dist/compiled/@next/font";
+import { Afacad } from "next/font/google";
+
+const afacad = Afacad({ subsets: ["latin"] }) as NextFont;
 import React from "react";
 
 interface CustomText {

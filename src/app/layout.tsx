@@ -3,8 +3,9 @@ import "./globals.css";
 
 import { Afacad } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import { NextFont } from "next/dist/compiled/@next/font";
 
-export const afacad = Afacad({ subsets: ["latin"] });
+const afacad = Afacad({ subsets: ["latin"] }) as NextFont;
 
 // export const metadata: Metadata = {
 //   title: "PropsNext Realty",
