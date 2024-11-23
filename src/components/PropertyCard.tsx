@@ -1,7 +1,7 @@
 import { PropertyStatus } from "@/models/Property";
 import Image from "next/image";
 import React from "react";
-import { ExtraSmallText, LargeText, SmallText } from "./Text";
+import { ExtraSmallText, SmallText } from "./Text";
 
 interface PropertyCardProps {
   imageUrl: string;
