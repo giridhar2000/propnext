@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="bg-[#F5F7F8] relative">
       <Image
-        src={"/landingBG.jpg"}
+        src={"/bg.jpg"}
         alt="landing-background"
         width={0}
         height={0}
@@ -16,10 +16,10 @@ const Hero = () => {
         unoptimized
       />
       <div className="absolute top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2">
-        <LargeText classname="text-[55px] text-center text-white font-extrabold">
+        <LargeText classname="text-[55px] text-center text-[#4A4947] font-extrabold drop-shadow-2xl text-shadow">
           Easy way to find a <br /> perfect property
         </LargeText>
-        <MediumText classname="text-center text-white">
+        <MediumText classname="text-center text-[#4A4947]">
           We provide a complete service for the sale,
           <br />
           purchase or rental of real estate
@@ -51,7 +51,7 @@ const Hero = () => {
           <SmallText classname="text-[#343131]/50">Select one</SmallText>
         </div>
 
-        <div className="bg-primaryBtn p-4 rounded-2xl">
+        <div className="bg-primaryBtn p-3 rounded-2xl">
           <Image src={"/search.svg"} width={30} height={30} alt="search-icon" />
         </div>
       </div>

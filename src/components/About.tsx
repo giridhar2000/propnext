@@ -20,15 +20,15 @@ const About = () => {
         </SmallText>
         <div className="flex justify-between w-full">
           <div className="flex flex-col items-start">
-            <LargeText>15k+</LargeText>
+            <LargeText classname="font-bold">15k+</LargeText>
             <SmallText>Properties for sale</SmallText>
           </div>
           <div className="flex flex-col items-start">
-            <LargeText>890</LargeText>
+            <LargeText classname="font-bold">890</LargeText>
             <SmallText>Daily completed transactions</SmallText>
           </div>
         </div>
-        <SecondaryButton classname="self-start rounded-xl">
+        <SecondaryButton classname="self-start rounded-xl font-bold tracking-widest">
           CONTACT US
         </SecondaryButton>
       </div>
