@@ -36,6 +36,20 @@ const propertyData: PropertyDetails[] = [
     },
   },
   {
+    name: "Cityscape Residential Towers",
+    status: PropertyStatus.UPCOMING,
+    image: "https://example.com/images/cityscape_residential.jpg",
+    type: PropertyType.RESIDENTIAL,
+    description:
+      "Modern residential towers with state-of-the-art facilities and city views.",
+    location: "San Francisco, USA",
+    info: {
+      noOfBedRooms: 2,
+      sqft: 1200,
+      noOfBaths: 2,
+    },
+  },
+  {
     name: "Ocean View Plot",
     status: PropertyStatus.COMPLETED,
     image: "https://example.com/images/ocean_view_plot.jpg",
@@ -93,6 +107,62 @@ const propertyData: PropertyDetails[] = [
     },
   },
   {
+    name: "Lakeside Plot",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/lakeside_plot.jpg",
+    type: PropertyType.PLOT,
+    description:
+      "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
+    location: "Lake Tahoe, Nevada, USA",
+    info: {
+      noOfBedRooms: 0,
+      sqft: 7500,
+      noOfBaths: 0,
+    },
+  },
+  {
+    name: "Lakeside Plot",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/lakeside_plot.jpg",
+    type: PropertyType.PLOT,
+    description:
+      "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
+    location: "Lake Tahoe, Nevada, USA",
+    info: {
+      noOfBedRooms: 0,
+      sqft: 7500,
+      noOfBaths: 0,
+    },
+  },
+  {
+    name: "Lakeside Plot",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/lakeside_plot.jpg",
+    type: PropertyType.PLOT,
+    description:
+      "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
+    location: "Lake Tahoe, Nevada, USA",
+    info: {
+      noOfBedRooms: 0,
+      sqft: 7500,
+      noOfBaths: 0,
+    },
+  },
+  {
+    name: "Lakeside Plot",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/lakeside_plot.jpg",
+    type: PropertyType.PLOT,
+    description:
+      "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
+    location: "Lake Tahoe, Nevada, USA",
+    info: {
+      noOfBedRooms: 0,
+      sqft: 7500,
+      noOfBaths: 0,
+    },
+  },
+  {
     name: "TechHub Commercial Center",
     status: PropertyStatus.COMPLETED,
     image: "https://example.com/images/techhub_commercial.jpg",
@@ -117,6 +187,32 @@ const propertyData: PropertyDetails[] = [
     info: {
       noOfBedRooms: 4,
       sqft: 3800,
+      noOfBaths: 4,
+    },
+  },
+  {
+    name: "Sunny Villas",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/sunny_villas.jpg",
+    type: PropertyType.VILLA,
+    description: "A luxurious villa with modern amenities and spacious rooms.",
+    location: "California, USA",
+    info: {
+      noOfBedRooms: 5,
+      sqft: 4500,
+      noOfBaths: 4,
+    },
+  },
+  {
+    name: "Sunny Villas",
+    status: PropertyStatus.COMPLETED,
+    image: "https://example.com/images/sunny_villas.jpg",
+    type: PropertyType.VILLA,
+    description: "A luxurious villa with modern amenities and spacious rooms.",
+    location: "California, USA",
+    info: {
+      noOfBedRooms: 5,
+      sqft: 4500,
       noOfBaths: 4,
     },
   },
