@@ -7,14 +7,14 @@ import {
   PropertyType,
 } from "@/models/Property";
 
-const propertyData: PropertyDetails[] = [
+export const propertyData: PropertyDetails[] = [
   {
     name: "Sunny Villas",
     status: PropertyStatus.COMPLETED,
     image: "https://example.com/images/sunny_villas.jpg",
     type: PropertyType.VILLA,
     description: "A luxurious villa with modern amenities and spacious rooms.",
-    location: "California, USA",
+    location: "Chennai",
     info: {
       noOfBedRooms: 5,
       sqft: 4500,
@@ -28,7 +28,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.RESIDENTIAL,
     description:
       "A new residential development with eco-friendly features and parks.",
-    location: "New York, USA",
+    location: "Chennai",
     info: {
       noOfBedRooms: 3,
       sqft: 1800,
@@ -42,7 +42,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.RESIDENTIAL,
     description:
       "Modern residential towers with state-of-the-art facilities and city views.",
-    location: "San Francisco, USA",
+    location: "Chennai",
     info: {
       noOfBedRooms: 2,
       sqft: 1200,
@@ -56,7 +56,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A beautiful plot with a panoramic ocean view, ideal for construction.",
-    location: "Miami, USA",
+    location: "Chennai",
     info: {
       noOfBedRooms: 0,
       sqft: 10000,
@@ -70,14 +70,13 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.COMMERCIAL,
     description:
       "A commercial property in the heart of downtown, perfect for offices or retail.",
-    location: "Los Angeles, USA",
+    location: "Chennai",
     info: {
       noOfBedRooms: 0,
       sqft: 8000,
       noOfBaths: 4,
     },
   },
-
   {
     name: "Cityscape Residential Towers",
     status: PropertyStatus.UPCOMING,
@@ -85,7 +84,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.RESIDENTIAL,
     description:
       "Modern residential towers with state-of-the-art facilities and city views.",
-    location: "San Francisco, USA",
+    location: "Coimbatore",
     info: {
       noOfBedRooms: 2,
       sqft: 1200,
@@ -99,7 +98,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
-    location: "Lake Tahoe, Nevada, USA",
+    location: "Coimbatore",
     info: {
       noOfBedRooms: 0,
       sqft: 7500,
@@ -113,7 +112,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
-    location: "Lake Tahoe, Nevada, USA",
+    location: "Coimbatore",
     info: {
       noOfBedRooms: 0,
       sqft: 7500,
@@ -127,7 +126,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
-    location: "Lake Tahoe, Nevada, USA",
+    location: "Coimbatore",
     info: {
       noOfBedRooms: 0,
       sqft: 7500,
@@ -141,7 +140,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
-    location: "Lake Tahoe, Nevada, USA",
+    location: "Coimbatore",
     info: {
       noOfBedRooms: 0,
       sqft: 7500,
@@ -155,7 +154,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.PLOT,
     description:
       "A peaceful lakeside plot perfect for a dream home or vacation cabin.",
-    location: "Lake Tahoe, Nevada, USA",
+    location: "Trichy",
     info: {
       noOfBedRooms: 0,
       sqft: 7500,
@@ -169,7 +168,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.COMMERCIAL,
     description:
       "A high-tech commercial center ideal for startups and tech companies.",
-    location: "Silicon Valley, California, USA",
+    location: "Trichy",
     info: {
       noOfBedRooms: 0,
       sqft: 10000,
@@ -183,7 +182,7 @@ const propertyData: PropertyDetails[] = [
     type: PropertyType.VILLA,
     description:
       "Luxurious riverside villas with private pools and serene views.",
-    location: "Napa Valley, California, USA",
+    location: "Trichy",
     info: {
       noOfBedRooms: 4,
       sqft: 3800,
@@ -196,7 +195,7 @@ const propertyData: PropertyDetails[] = [
     image: "https://example.com/images/sunny_villas.jpg",
     type: PropertyType.VILLA,
     description: "A luxurious villa with modern amenities and spacious rooms.",
-    location: "California, USA",
+    location: "Trichy",
     info: {
       noOfBedRooms: 5,
       sqft: 4500,
@@ -209,7 +208,7 @@ const propertyData: PropertyDetails[] = [
     image: "https://example.com/images/sunny_villas.jpg",
     type: PropertyType.VILLA,
     description: "A luxurious villa with modern amenities and spacious rooms.",
-    location: "California, USA",
+    location: "Trichy",
     info: {
       noOfBedRooms: 5,
       sqft: 4500,

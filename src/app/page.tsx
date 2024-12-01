@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Cities from "@/components/Cities";
 import ContactUs from "@/components/ContactUs";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Listing from "@/components/Listing";
 import React from "react";
@@ -16,8 +15,9 @@ export default function Home() {
       <hr className="my-8" />
       <Cities />
       <hr className="my-8" />
-      <ContactUs />
-      <Footer />
+      <div id="contactus">
+        <ContactUs />
+      </div>
     </div>
   );
 }

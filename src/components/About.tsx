@@ -2,6 +2,7 @@ import React from "react";
 import { LargeText, SmallText } from "./Text";
 import { SecondaryButton } from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -28,9 +29,11 @@ const About = () => {
             <SmallText>Daily completed transactions</SmallText>
           </div>
         </div>
-        <SecondaryButton classname="self-start rounded-xl font-bold tracking-widest">
-          CONTACT US
-        </SecondaryButton>
+        <Link href={"#contactus"}>
+          <SecondaryButton classname="self-start rounded-xl font-bold tracking-widest">
+            CONTACT US
+          </SecondaryButton>
+        </Link>
       </div>
       <div className="w-2/5">
         <Image

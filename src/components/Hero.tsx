@@ -1,9 +1,21 @@
+"use client";
 import { LargeText, MediumText, SmallText } from "@/components/Text";
 import VerticalSpacer from "@/components/VerticalSpacer";
 import Image from "next/image";
 import React from "react";
+import { propertyData } from "./Listing";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const allCities = propertyData.map((val) => {
+    return val.location;
+  });
+  const cities = [...new Set(allCities)];
+  const allTypes = propertyData.map((val) => {
+    return val.type;
+  });
+  const propertyType = [...new Set(allTypes)];
+  const router = useRouter();
   return (
     <div className="bg-[#F5F7F8] relative">
       <Image
@@ -29,9 +41,25 @@ const Hero = () => {
         <div className="flex items-center justify-between flex-1">
           <div className="flex flex-col gap-y-4">
             <MediumText classname="font-bold">Location</MediumText>
-            <SmallText classname="text-[#343131]/50">
-              Select Your City
-            </SmallText>
+            <div className="group relative">
+              <SmallText classname="text-[#343131]/50">
+                Select Your City
+              </SmallText>
+              <div className="bg-white hidden rounded-xl p-2 absolute top-full z-50 group-hover:block">
+                {cities.map((city, index) => {
+                  return (
+                    <div
+                      key={index}
+                      onClick={() => router.push(`/city/${city.toLowerCase()}`)}
+                    >
+                      <SmallText classname="cursor-pointer hover:bg-primaryBtn hover:text-secondaryBtn rounded-lg p-2">
+                        {city}
+                      </SmallText>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
           <VerticalSpacer classname="bg-green-800" />
         </div>
@@ -39,9 +67,26 @@ const Hero = () => {
         <div className="flex items-center justify-between flex-1">
           <div className="flex flex-col gap-y-4">
             <MediumText classname="font-bold">Property Type</MediumText>
-            <SmallText classname="text-[#343131]/50">
-              Choose Property Type
-            </SmallText>
+            <div className="group relative">
+              <SmallText classname="text-[#343131]/50">
+                Choose Property Type
+              </SmallText>
+
+              <div className="bg-white hidden rounded-xl p-2 absolute top-full z-50 group-hover:block">
+                {propertyType.map((property, index) => {
+                  return (
+                    <div
+                      key={index}
+                      // onClick={() => router.push(`/city/${city.toLowerCase()}`)}
+                    >
+                      <SmallText classname="cursor-pointer hover:bg-primaryBtn hover:text-secondaryBtn rounded-lg p-2">
+                        {property}
+                      </SmallText>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
           <VerticalSpacer classname="bg-green-800" />
         </div>

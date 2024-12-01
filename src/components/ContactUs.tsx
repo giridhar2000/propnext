@@ -44,7 +44,9 @@ const ContactUs = () => {
               height={30}
               unoptimized
             />
-            <SmallText classname="text-white">Address Comes here</SmallText>
+            <SmallText classname="text-white">
+              Jaganathanpuram, Velachery, Chennai - 600042
+            </SmallText>
           </div>
         </div>
       </div>

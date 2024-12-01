@@ -4,6 +4,7 @@ import "./globals.css";
 import { Afacad } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { NextFont } from "next/dist/compiled/@next/font";
+import Footer from "@/components/Footer";
 
 const afacad = Afacad({ subsets: ["latin"] }) as NextFont;
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${afacad.className} antialiased bg-[#F5F7F8]`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
