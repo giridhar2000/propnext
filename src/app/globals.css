@@ -2,21 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: "inter";
 }
 
@@ -171,4 +157,10 @@ footer .wave#wave4 {
   margin-bottom: -1vh;
   width: 100%;
   /* mask-image: linear-gradient(to bottom, transparent 2%, #0f0f0f 80%); */
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

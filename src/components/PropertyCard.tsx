@@ -2,15 +2,24 @@ import { PropertyDetails } from "@/models/Property";
 import Image from "next/image";
 import React from "react";
 import { ExtraSmallText, SmallText } from "./Text";
+import { useRouter } from "next/navigation";
 
 interface PropertyCardProps {
   property: PropertyDetails;
+  className?: string;
 }
 
-const PropertyCard = ({ property }: PropertyCardProps) => {
+const PropertyCard = ({ property, className }: PropertyCardProps) => {
+  const router = useRouter();
+
   return (
-    <div className="bg-white rounded-2xl p-4 flex flex-col items-start gap-2 w-1/5 shadow-sm">
-      <div className="w-full relative hover:cursor-pointer group">
+    <div
+      className={`bg-white rounded-2xl p-4 flex flex-col items-start gap-2 w-1/5 shadow-sm ${className}`}
+    >
+      <div
+        className="w-full relative hover:cursor-pointer group"
+        onClick={() => router.push(`/property/${property.id}`)}
+      >
         <Image
           src={"/kitchenImage.jpg"}
           alt="property-img"

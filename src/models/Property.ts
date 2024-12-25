@@ -1,4 +1,5 @@
 export interface PropertyDetails {
+  id: string;
   name: string;
   status: PropertyStatus;
   image: string;

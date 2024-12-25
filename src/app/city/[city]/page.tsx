@@ -9,14 +9,13 @@ import React, { useLayoutEffect, useState } from "react";
 const City = () => {
   const { city } = useParams();
   const [cityDetails, setCityDetails] = useState<PropertyDetails[]>([]);
+  
   useLayoutEffect(() => {
     setCityDetails(
       propertyData.filter((property) => property.location.toLowerCase() == city)
     );
-    console.log(
-      propertyData.filter((property) => property.location.toLowerCase() == city)
-    );
   }, []);
+
   return (
     <div className="relative">
       <div className="absolute p-4">

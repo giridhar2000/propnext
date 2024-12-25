@@ -68,7 +68,7 @@ const Navbar = () => {
               return (
                 <div
                   key={index}
-                  // onClick={() => router.push(`/city/${city.toLowerCase()}`)}
+                  onClick={() => router.push(`/propertyType/${property}`)}
                 >
                   <SmallText classname="cursor-pointer hover:bg-primaryBtn hover:text-secondaryBtn rounded-lg p-2">
                     {property}
